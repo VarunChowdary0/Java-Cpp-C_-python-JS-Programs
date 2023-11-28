@@ -10,7 +10,6 @@ def FindTheElement(List,x):
         FindTheElement(List[:mid],x)
     else:
         FindTheElement(List[mid:],x)
-
 print("Enter elements: ")
 MyList = list(map(int,input().split()))
 x = int(input("Enter value to be searched: "))
