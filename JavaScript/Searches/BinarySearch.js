@@ -5,9 +5,7 @@ console.log("Enter elements in accending order : --| ");
 for(i=0;i<n;i++){
     const a = prompt();
     arr.push(parseInt(a));
-}
-
-// parseInt() => type castes string to int; 
+}// parseInt() => type castes string to int; 
 const x = prompt("Enter the element to be found: ");
 let found = false;
 let start=0;
