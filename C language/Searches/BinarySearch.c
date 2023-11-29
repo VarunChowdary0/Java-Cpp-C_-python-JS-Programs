@@ -1,6 +1,5 @@
 #include<stdio.h>
 int main(void){
-    int arr[100];
     int n;
     int i;
     int x;
@@ -8,6 +7,7 @@ int main(void){
     int found = 0;
     printf("Enter no of Elememts: ");
     scanf("%d",&n);
+    int arr[n];
     printf("Enter elememts in accending order: ");
     for(i=0;i<n;i++){
         scanf("%d",&arr[i]);
