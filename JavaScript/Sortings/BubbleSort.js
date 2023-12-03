@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')({sigint:true})
-const n = parseInt(prompt("Enter no of eleements: "));
+const n = parseInt(prompt("Enter no of elements: "));
 const arr = [];
 for(i=0;i<n;i++){
     const a = parseInt(prompt());
