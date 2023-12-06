@@ -1,5 +1,4 @@
 package Java.Sortings;
-
 import java.util.Scanner;
 
 public class InsertionSort {
