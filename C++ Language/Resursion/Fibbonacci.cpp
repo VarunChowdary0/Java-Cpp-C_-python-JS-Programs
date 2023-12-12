@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-long Fibbo(long N){
+long long int Fibbo(int N){
     if (N == 0)
     {
         return 0;
