@@ -5,6 +5,6 @@ for i in range(n):
     for j in range(i,n):
         if arr[min_idx] > arr[j]:
             min_idx = j
-        arr[min_idx] , arr[i] = arr[i] , arr[min_idx]
-
+    print(arr[min_idx]," swap ",arr[i],arr) 
+    arr[min_idx] , arr[i] = arr[i] , arr[min_idx]
 print(arr) 
