@@ -120,6 +120,7 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = None
+            
 LL = LinkedList()
 LL.insertEnd(10)
 LL.insertEnd(20)
