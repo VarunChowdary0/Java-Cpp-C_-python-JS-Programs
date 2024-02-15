@@ -41,15 +41,23 @@ class DoubleLinkedList :
             new_node = Node(value)
             mid = self.length//2
             if position < mid:
+                print("<")
                 current = self.head
-                for i in range(position):
+                for i in range(position-1):
                     current = current.next
+                    print(i)
                 new_node.next = current.next
                 current.next.previous = new_node
                 new_node.previous = current
                 current.next = new_node                
             else:
-                "right"
+                current = self.tail
+                for i in range(self.length,position-1,-1):
+                    current = current.previous
+                new_node.next = current.next
+                current.next.previous = new_node
+                new_node.previous = current
+                current.next = new_node 
 
     def deleteEnd(self):
         if self.head == None:
@@ -82,9 +90,15 @@ DLL.insertEnd(10)
 DLL.insertEnd(20)
 DLL.insertEnd(30)
 DLL.insertEnd(40)
+DLL.insertEnd(70)
 DLL.insertStart(0)
 DLL.traverse()
-DLL.deleteEnd()
+# DLL.deleteEnd()
+# DLL.traverse()
+# DLL.deleteStart()
+# DLL.traverse()
+DLL.insertAt(2,50)
 DLL.traverse()
-DLL.deleteStart()
+print("L: ",DLL.length)
+DLL.insertAt(3,90)
 DLL.traverse()
